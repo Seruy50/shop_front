@@ -2,8 +2,18 @@ import { React, useState, useEffect } from 'react';
 import Orders from './ShopingCart/orders.js';
 import axios from 'axios'
 
-export function ShopingCart({ orders, setOrders}){
+export function ShopingCart(){
     const [totalPrice, setTotalPrice] = useState(0);
+    const [orders, setOrders] = useState( () => {
+     let order = JSON.parse(localStorage.getItem('cart'))
+
+     if(Array.isArray(order)){
+         return [...order]
+     } else {
+         return order
+     }
+ }    
+ )
     
     useEffect(() => {
      let c = getTotalPrice(orders);

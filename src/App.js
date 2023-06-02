@@ -6,13 +6,12 @@ import { Header } from './Components/header.js'
 import './styles.css'
 
 export default function App(){
-  const [orders, setOrders] = useState([]);
   return (
       <Router>
         <Header />
         <Routes>
-          <Route element={<MainPage orders={orders} setOrders={setOrders}/>} path="/"></Route>
-          <Route element={<ShopingCart orders={orders} setOrders={setOrders}/>} path="/shopingCart"></Route>
+          <Route element={<MainPage />} path="/"></Route>
+          <Route element={<ShopingCart />} path="/shopingCart"></Route>
           <Route></Route>
         </Routes>
       </Router>

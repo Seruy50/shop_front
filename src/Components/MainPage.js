@@ -7,6 +7,6 @@ export function MainPage({ orders, setOrders }){
 
     return <div className="MainPage">
         <Restaurants setShopId={setShopId} />
-        <Dishes shopId={shopId} orders={orders} setOrders={setOrders}/>
+        <Dishes shopId={shopId} />
     </div>
 }
