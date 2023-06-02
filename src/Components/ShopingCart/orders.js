@@ -10,11 +10,11 @@ export default function Orders({ orders, setOrders}){
 
     let dishes = []; 
 
-    if(orders.length !== 0){
+    if(orders !== null){
         for(let item of orders){
             dishes.push(<div className="shopingcart__card" key={item.Id}><div>IMAGE</div><div><p>Name: {item.name}</p><p>Price: {item.price}</p><p>Count: {item.count}</p><p>Change count: <input value={item.count} onChange={(e) => changeCount(e)} id={item._id} type="number"></input></p><button onClick={() => deleteCard(item._id)}>Delete</button></div></div>)
         }
-    }   
+    }    
 
     function deleteCard(id){
         let mid = [];
