@@ -8,7 +8,7 @@ export function ShopingCart(){
      
      let order = JSON.parse(localStorage.getItem('cart'))
      if(order === null) {
-          return;
+          return []
      }
 
      if(Array.isArray(order)){
