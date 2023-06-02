@@ -5,7 +5,11 @@ import axios from 'axios'
 export function ShopingCart(){
     const [totalPrice, setTotalPrice] = useState(0);
     const [orders, setOrders] = useState( () => {
+     
      let order = JSON.parse(localStorage.getItem('cart'))
+     if(order === null) {
+          return;
+     }
 
      if(Array.isArray(order)){
          return [...order]
