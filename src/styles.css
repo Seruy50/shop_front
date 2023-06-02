@@ -1,0 +1,140 @@
+header {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    border: 1px solid red;
+    background-color: yellow;
+    padding-right: 100px;
+}
+
+.header__links{
+    position: absolute;
+    left: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    border: 1px solid red;
+    font: 20px/20px times;
+    
+}
+
+.header__links__span{
+    margin-top: 25px;
+    width: 40px;
+    border: 2px solid black;
+    height: 0px;
+    rotate: 90deg
+}
+
+.MainPage{
+    display: flex;
+    width: 100%;
+}
+
+.Restaurants{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    width: 20%;
+    height: 800px;
+    border: 1px solid green;
+}
+
+.Restaurants__button{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 70px;
+    border: 1px solid red;  
+    font: 25px/25px times;
+}
+
+.dishes{
+    box-sizing: border-box;
+    padding-top: 100px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 25px;
+    border: 1px solid grey;
+    width: 80%;
+    height: 800px;
+    overflow-y:scroll;
+}
+
+.dishes__card{
+    width: 300px;
+    height: 300px;
+    border: 1px solid green;
+}
+
+.shopinCart__formOrders{
+    display: flex;
+    width: 100%;
+    height: 600px;
+    border: 1px solid grey;
+}
+
+.shopinCart__form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 50%;
+    border: 1px solid grey;
+}
+
+.shopinCart__orders{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:25px;
+    width: 50%;
+    padding-top: 25px;
+    overflow-y: scroll;
+    border: 1px solid yellow;
+}
+
+.shopingcart__card{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+}
+
+.shopingcart__card div:nth-child(1){
+    box-sizing: border-box;
+    width: 50%;
+    border: 1px solid red;
+    padding: 10px;
+}
+.shopingcart__card div:nth-child(2){
+    box-sizing: border-box;
+    width: 50%;
+    border: 1px solid yellow;
+}
+
+.submitOrder{
+    box-sizing: border-box;
+    padding-right: 150px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 150px;
+    width: 100%;
+    height: 100px;
+    border: 1px solid black;
+
+}
+.submitOrder button {
+    display: block;
+}
+
