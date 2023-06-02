@@ -59,7 +59,7 @@ function formAndSendOrder(e, order, totalPrice){
      }
      console.log(finalOrder)
 
-     axios.post('http://localhost:3001/order', finalOrder)
+     axios.post('https://foodshop-back.onrender.com/order', finalOrder)
      .then(item => console.log(item))
      .catch(e => console.log(e))
 }

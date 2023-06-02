@@ -6,7 +6,7 @@ import axios from 'axios';
 export function Dishes({ shopId, orders, setOrders }){
     const [dishes, setDishes] = useState([]);
     useEffect(() => {
-        axios.get(`http://localhost:3001/${shopId}`)
+        axios.get(`https://foodshop-back.onrender.com/${shopId}`)
         .then(item => {
             let some = [];
             item.data.map(item => some.push(<div className="dishes__card" key={item._id}>

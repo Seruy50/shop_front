@@ -6,10 +6,6 @@ import axios from 'axios';
 
 export function Header() {
 
-    const tryr = () => {
-        axios.get('http://localhost:3001/McDonalds').then(item => console.log(item)).catch(err => console.log(err))
-    }
-
     return  <header>
                 <div className="header__links">
                     <div className="header__links__one">

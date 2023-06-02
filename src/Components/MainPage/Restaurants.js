@@ -5,7 +5,7 @@ export function Restaurants({ setShopId }){
     const [rests, setRests] = useState();
 
     useEffect(() => {
-        axios.get('http://localhost:3001/rests')
+        axios.get('https://foodshop-back.onrender.com/rests')
         .then(item => {
             let list = [];
             item.data.map(item => list.push(<div className="Restaurants__button" onClick={() => setShopId(item._id)} key={item._id}><p>{item.name}</p></div>));
