@@ -1,12 +1,14 @@
-import { React, useState } from 'react';
-import { Restaurants } from './MainPage/Restaurants.js';
-import { Dishes } from './MainPage/Dishes.js'
+import { React, useState } from "react";
+import Shops from "./MainPage/Shops.js";
+import Dishes from "./MainPage/Dishes.js";
 
-export function MainPage({ orders, setOrders }){
-    const [shopId, setShopId] = useState('64788036b33af5ce1571914f');
+export default function MainPage() {
+  const [shopId, setShopId] = useState("64788036b33af5ce1571914f");
 
-    return <div className="MainPage">
-        <Restaurants setShopId={setShopId} shopId={shopId} />
-        <Dishes shopId={shopId} />
+  return (
+    <div className="mainPage">
+      <Shops setShopId={setShopId} shopId={shopId} />
+      <Dishes shopId={shopId} />
     </div>
+  );
 }
