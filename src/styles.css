@@ -316,8 +316,4 @@ header {
     border: 1px solid red;
 }
 
-.submitOrder button:active {
-    width: 180px;
-    height: 60px;
-}
 
