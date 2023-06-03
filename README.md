@@ -1,4 +1,5 @@
 # Food Delivery app
+**Deployed application - https://foodshop-lx9v.onrender.com/;
 ## Available actions
 
 User able to do next things:
