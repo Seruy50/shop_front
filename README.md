@@ -16,6 +16,8 @@ Users must do these next things to place order:
 5. Fill out form on the left side of page;
 6. Click on the button 'Submit'
 
+Current user’s orders are saved in the localStorage and are available after a page update.
+
 ## How to start the application
 
 This is frontend part of project. To use it, you should start the server on your local machine first. Repo and instructions can be found here - https://github.com/Seruy50/shop_back
