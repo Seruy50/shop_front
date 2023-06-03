@@ -17,13 +17,12 @@ Users must do these next things to place order:
 
 ## How to start the application
 
-1. Clone 'shop_front' and 'shop_back';
-2. Enter into the folder 'shop_back';
+This is frontend part of project. To use it, you should start the server on your local machine first. Repo and instructions can be found here - https://github.com/Seruy50/shop_back
+
+1. Clone 'shop_front' and 'shop_back'(https://github.com/Seruy50/shop_back);
+2. Enter into 'shop_front' folder;
 3. Use command '**npm i**' in the terminal to install packages;
-4. Use command '**npm start**' to start the server;
-5. Enter into 'shop_front' folder;
-6. Use command '**npm i**' in the terminal to install packages;
-7. Use command '**npm start**' to start the application;
+4. Use command '**npm start**' to start the application;
 
 
 
