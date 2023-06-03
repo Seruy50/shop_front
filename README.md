@@ -17,7 +17,7 @@ Users must do these next things to place order:
 
 ## How to start the application
 
-1. Clone 'shop_front' and 'shop_back' this repositories;
+1. Clone 'shop_front' and 'shop_back';
 2. Enter into the folder 'shop_back';
 3. Use command '**npm i**' in the terminal to install packages;
 4. Use command '**npm start**' to start the server;
