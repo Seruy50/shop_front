@@ -1,5 +1,5 @@
 import { React, useState, useEffect } from 'react';
-import Orders from './ShopingCart/orders.js';
+import Orders from './ShoppingCart/orders.js';
 import axios from 'axios'
 
 export function ShopingCart(){
@@ -24,10 +24,10 @@ export function ShopingCart(){
      setTotalPrice(c)
     }, [orders])
 
-    return <div>
-               <div className="shopinCart__formOrders">
-                    <div className="shopinCart__form">
-                         <form action="/" method="POST" id="contactForm" onSubmit={(e) => formAndSendOrder(e, orders, totalPrice)}>
+    return <div className="shoppingCart"> 
+               <div className="shoppingCart__formOrders">
+                    <div className="shoppingCart__form">
+                         <form className="shoppingCart__form__inputs" action="/" method="POST" id="contactForm" onSubmit={(e) => formAndSendOrder(e, orders, totalPrice)}>
                          <p>
                               Name: <br/>
                               <input name="name"></input>
@@ -49,7 +49,7 @@ export function ShopingCart(){
                     <Orders orders={orders} setOrders={setOrders} />     
                </div>
                <div className="submitOrder">
-                    <p>Total price: {totalPrice}</p><button type="submit" form="contactForm">Submit</button>
+                    <p>Total price: {totalPrice}$</p><button type="submit" form="contactForm">Submit</button>
                </div>
      </div>
 }

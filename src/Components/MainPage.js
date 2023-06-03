@@ -6,7 +6,7 @@ export function MainPage({ orders, setOrders }){
     const [shopId, setShopId] = useState('64788036b33af5ce1571914f');
 
     return <div className="MainPage">
-        <Restaurants setShopId={setShopId} />
+        <Restaurants setShopId={setShopId} shopId={shopId} />
         <Dishes shopId={shopId} />
     </div>
 }

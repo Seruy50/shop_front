@@ -1,3 +1,9 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/*Header start*/
 header {
     position: relative;
     display: flex;
@@ -5,8 +11,6 @@ header {
     align-items: center;
     width: 100%;
     height: 100px;
-    border: 1px solid red;
-    background-color: yellow;
     padding-right: 100px;
 }
 
@@ -16,32 +20,50 @@ header {
     display: flex;
     flex-direction: row;
     gap: 20px;
-    border: 1px solid red;
     font: 20px/20px times;
+    text-decoration: none;
+}
+
+.header__link {
+    text-decoration: none;
+    color: red;
+}
+
+.header__link:hover {
     
+    color: rgb(255, 193, 27);
 }
 
 .header__links__span{
-    margin-top: 25px;
+    margin-top: 10px;
     width: 40px;
-    border: 2px solid black;
+    border: 1px solid green;
     height: 0px;
     rotate: 90deg
 }
 
+/*mainpage*/
+
 .MainPage{
     display: flex;
+    justify-content: space-around;
     width: 100%;
 }
 
 .Restaurants{
+    padding-top: 80px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 25px;
-    width: 20%;
+    width: 15%;
     height: 800px;
-    border: 1px solid green;
+    border: 3px double rgb(255, 193, 27);
+    border-radius: 25px;
+}
+
+.Restaurants p{
+    font: 25px/15px times;
 }
 
 .Restaurants__button{
@@ -49,80 +71,229 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 200px;
-    height: 70px;
-    border: 1px solid red;  
+    width: 80%;;
+    height: 70px; 
     font: 25px/25px times;
+    border: 1px solid red;
+    background-color: rgba(230, 216, 17, 0.751);
+    color: red;
+    border-radius: 10px;
 }
 
+.Restaurants__button__active{
+    background-color: red;
+    color: white;
+}
+
+.Restaurants__button:hover {
+    background-color: red;
+    color: white;
+}
+
+
+
 .dishes{
-    box-sizing: border-box;
-    padding-top: 100px;
+    padding-top: 40px;
     display:flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 25px;
-    border: 1px solid grey;
+    border: 3px double rgb(255, 193, 27);
+    border-radius: 25px;
     width: 80%;
     height: 800px;
-    overflow-y:scroll;
+    overflow: auto;
 }
 
 .dishes__card{
-    width: 300px;
-    height: 300px;
-    border: 1px solid green;
-}
-
-.shopinCart__formOrders{
-    display: flex;
-    width: 100%;
-    height: 600px;
-    border: 1px solid grey;
-}
-
-.shopinCart__form{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 40px;
-    width: 50%;
-    border: 1px solid grey;
+    width: 300px;
+    min-height: 300px;
+    max-height: 350px;
+    border: 1px solid red;
+    border-radius: 20px;
+    
 }
 
-.shopinCart__orders{
+.dishes__card__image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 300px;
+    
+}
+
+.dishes__card__image img {
+    display: block;
+    max-width: 250px;
+    
+}
+
+.dishes__card__description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    height: 100px;
+}
+
+.dishes__card__description p{
+    font: 22px/35px times;
+    text-align: center;
+}
+
+
+.dishes__card__button{
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 40px; 
+    font: 22px/25px times;
+    border:none;
+    background-color: rgba(251, 4, 4, 1);
+    color: white;
+}
+
+.dishes__card__button:hover {
+    background-color: #fff;
+    color: red;
+    border: 1px solid red;
+}
+
+.dishes__card__button:disabled{
+    background-color: grey;
+    border: 1px solid red;
+}
+
+.shoppingCart{
+    
+}
+
+.shoppingCart__formOrders{
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    width: 90%;
+    height: 650px;
+    
+}
+
+.shoppingCart__form{
+    padding: 100px;
+    align-items: center;
+    gap: 40px;
+    width: 48%;
+    border: 3px double rgb(255, 193, 27);
+    border-radius: 25px;
+}
+
+.shoppingCart__form__inputs{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.shoppingCart__form__inputs p{
+    width: 80%;
+    font: 23px/25px times;
+}
+
+.shoppingCart__form__inputs p input{
+    border: 2px solid red;
+    width: 100%;
+    height: 40px;
+    font: 23px/25px times;
+    border-radius: 25px;
+    padding-left: 25px;
+}
+
+.shoppingCart__form__inputs p input:hover{
+    border: 2px solid rgb(255, 193, 27);
+}
+
+.shoppingCart__orders{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap:25px;
-    width: 50%;
+    width: 48%;
     padding-top: 25px;
-    overflow-y: scroll;
-    border: 1px solid yellow;
+    overflow-y: auto;
+    border: 3px double rgb(255, 193, 27);
+    border-radius: 25px;
 }
 
-.shopingcart__card{
+.shoppingCart__card{
+    position: relative;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
     width: 80%;
+    border: 1px solid red;
+    border-radius: 25px;
 }
 
-.shopingcart__card div:nth-child(1){
-    box-sizing: border-box;
+.shoppingCart__card div{
     width: 50%;
+}
+
+.shoppingCart__card__description{
+    padding-top: 25px;
+    font: 20px/25px times;
+}
+
+.shoppingCart__card__counter{
+    margin-left:15px;
+    width: 50px;
+}
+
+.shoppingCart__card__button{
+    position: absolute;
+    background-color: #fff;
+    width: 25px;
+    height: 25px;
+    top: 15px;
+    right: 15px;
+    border-radius: 50%;
     border: 1px solid red;
-    padding: 10px;
 }
-.shopingcart__card div:nth-child(2){
-    box-sizing: border-box;
-    width: 50%;
-    border: 1px solid yellow;
-}
+
+.shoppingCart__card__button span:first-child{
+    position: absolute;
+    top: 10px;
+    left: 3px;
+    width: 17px;
+    height: 2px;
+    rotate: 45deg;
+    border: 2px solid red;
+}   
+
+
+.shoppingCart__card__button span:last-child{
+    position: absolute;
+    top: 10px;
+    left: 3px;
+    width: 17px;
+    height: 2px;
+    rotate: -45deg;
+    border: 2px solid red;
+}   
 
 .submitOrder{
+    font: 25px/25px times;
     box-sizing: border-box;
     padding-right: 150px;
     display: flex;
@@ -131,10 +302,25 @@ header {
     gap: 150px;
     width: 100%;
     height: 100px;
-    border: 1px solid black;
-
 }
 .submitOrder button {
     display: block;
+    width: 150px;
+    height: 50px;
+    background-color: rgb(255, 193, 27);
+    border: 1px solid red;
+    border-radius: 10px;
+    font: 20px/20px times;
+}
+
+.submitOrder button:hover {
+    background-color: white;
+    color: red;
+    border: 1px solid red;
+}
+
+.submitOrder button:active {
+    width: 180px;
+    height: 60px;
 }
 
