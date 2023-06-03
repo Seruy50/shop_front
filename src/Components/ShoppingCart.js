@@ -1,6 +1,8 @@
 import { React, useState, useEffect } from "react";
 import Orders from "./ShoppingCart/Orders.js";
 import axios from "axios";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function ShopingCart() {
   const [totalPrice, setTotalPrice] = useState(0);
@@ -53,6 +55,7 @@ export default function ShopingCart() {
           </form>
         </div>
         <Orders orders={orders} setOrders={setOrders} />
+        <ToastContainer />
       </div>
       <div className="submitOrder">
         <p>Total price: {totalPrice}$</p>
@@ -86,7 +89,7 @@ function formAndSendOrder(e, order, totalPrice) {
 
   axios
     .post("https://foodshop-back.onrender.com/order", finalOrder)
-    .then()
+    .then(data => toast.success('Order accepted!', {}))
     .catch((e) => console.log(e));
 }
 
