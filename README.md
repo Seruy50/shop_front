@@ -19,11 +19,11 @@ Users must do these next things to place order:
 
 1. Clone 'shop_front' and 'shop_back' this repositories;
 2. Enter into the folder 'shop_back';
-3. Use command 'npm i' in the terminal to install packages;
-4. Use command 'npm start' to start the server;
+3. Use command '**npm i**' in the terminal to install packages;
+4. Use command '**npm start**' to start the server;
 5. Enter into 'shop_front' folder;
-6. Use command 'npm i' in the terminal to install packages;
-7. Use command 'npm start' to start the application;
+6. Use command '**npm i**' in the terminal to install packages;
+7. Use command '**npm start**' to start the application;
 
 
 
